@@ -6,10 +6,11 @@ const studentDetails = {
     rollno : "Unknown",
     dep : "Unknown",
     passedOut: "Unknown",
+    skills:[],
 }
 
 function Learn({data=studentDetails}) {
-    const {name,rollno,dep,passedOut}=data
+    const {name,rollno,dep,passedOut,skills}=data
   return (
     <div className='student-details'>
         <div>Student Details</div>
@@ -17,6 +18,14 @@ function Learn({data=studentDetails}) {
         <div>Roll no : {rollno} </div>
         <div>Dep : {dep}</div>
         <div>Year of passed out : {passedOut}</div>
+        <div>skills</div>
+        <ul className='skills'>
+        {skills.map((skills,index)=>(
+        
+                <li key={index}>{skills}</li>
+            
+        ))}
+        </ul>
     </div>
   )
 }
