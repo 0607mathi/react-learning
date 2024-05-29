@@ -1,16 +1,16 @@
 import React from 'react'
 import './App.css'
 
-const studentDetails = {
-    name : "Unknown",
-    rollno : "Unknown",
-    dep : "Unknown",
-    passedOut: "Unknown",
-    skills:[],
-}
+// const studentDetails = {
+//     name : "Unknown",
+//     rollno : "Unknown",
+//     dep : "Unknown",
+//     passedOut: "Unknown",
+//     skills:[],
+// }
 
-function Learn({data=studentDetails}) {
-    const {name,rollno,dep,passedOut,skills}=data
+function Learn(props) {
+    const{name,rollno,dep,passedOut,skills}=props.Details
   return (
     <div className='student-details'>
         <div>Student Details</div>
@@ -26,6 +26,7 @@ function Learn({data=studentDetails}) {
             
         ))}
         </ul>
+        {/* {console.log(props.Details.name)} */}
     </div>
   )
 }
