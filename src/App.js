@@ -33,11 +33,15 @@ const Data =[
 
 function App() {
   return (
+    <>
     <div className='students'>
-     {Data.map((details, index) => (
-        <Learn key={index} Details={details} />
+     {Data.map((data, index) => (
+        <Learn key={index} studentData={data} />
       ))}
+
+         <Learn/>
     </div>
+    </>
   );
 }
 
