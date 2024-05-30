@@ -1,46 +1,40 @@
-import './App.css'
-import Learn from './Learn';
+import "./App.css";
+import Learn from "./Learn";
+import { UserInput } from "./UserInput";
 
-const Data =[
-   {
-    name : "Mathi",
-    rollno : "20IT029",
-    dep : "B-tech IT",
+const Data = [
+  {
+    name: "Mathi",
+    rollno: "20IT029",
+    dep: "B-tech IT",
     passedOut: 2024,
-    skills:[
-      "Html","CSS","Js","Bootstrap","Tailwind","React","Sql","GitHub"
+    skills: [
+      "Html",
+      "CSS",
+      "Js",
+      "Bootstrap",
+      "Tailwind",
+      "React",
+      "Sql",
+      "GitHub",
     ],
   },
-   {
-    name : "Arunboopathi",
-    rollno : "20IT005",
-    dep : "B-tech IT",
-    passedOut: 2024,
-    skills:[
-      "Html","CSS","Js","Sql","GitHub"
-    ],
-  },
-   {
-    name : "Sowmiyan",
-    rollno : "20IT0056",
-    dep : "B-tech IT",
-    passedOut: 2024,
-    skills:[
-      "Html","CSS","Js","Sql","GitHub"
-    ],
-  }
-]
+  
+];
 
-function App() {
+function App(props) {
+
   return (
     <>
-    <div className='students'>
-     {Data.map((data, index) => (
-        <Learn key={index} studentData={data} />
-      ))}
-
-         <Learn/>
+    <div className="input-box">
+      <UserInput />
     </div>
+
+      <div className="students">
+        {Data.map((data, index) => (
+          <Learn key={index} studentData={data} />
+        ))}
+      </div>
     </>
   );
 }

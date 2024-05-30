@@ -12,7 +12,7 @@ body{
     gap:10px;
 }
 
-.student-details{
+.student-details,.user-input{
     border: 1px solid black;
     width:300px;
     height: 300px;
@@ -24,4 +24,34 @@ body{
     text-align: center;
     font-weight: bold;
     margin-bottom: 10px;
+}
+
+.input-box{
+
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.user-input{
+display: flex;
+flex-direction: column;
+justify-content:space-evenly;
+}
+
+label{
+    font-weight: 700;
+}
+
+.add-card{
+    margin-top: 10px;
+    padding: 5px;
+    border-radius: 4px;
+    font-weight: 700;
+}
+
+.add-card:hover{
+    background-color: gray;
+    color: white;
 }
