@@ -65,6 +65,9 @@ textarea{
 }
 
 form{
+    border-radius: 10px;
+    border:1px solid white;
+    padding: 5px;
     width: 350px;
     display: flex;
     flex-direction: column;

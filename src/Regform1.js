@@ -13,7 +13,7 @@ export const Regform1 = () => {
   const changeHandler = (e) => {
     const name = e.target.name;
     const value =
-      e.target.type === "checkbox" ? e.target.checked : e.target.value;
+      e.target.type === 'checkbox' ? e.target.checked : e.target.value;
     setUser({ ...user, [name]: value });
   };
   return (
