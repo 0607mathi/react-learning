@@ -1,7 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import { Cart } from './Cart';
+import { UserDetails } from './UserDetails';
+// import { Cart } from './Cart';
 // import App from './App';
 
 
@@ -10,10 +11,10 @@ root.render(
   <React.StrictMode>
     {/*
         <App />
+        <Cart />
      */}
 
-     <Cart />
-    
+    <UserDetails/>
   </React.StrictMode>
 );
 
