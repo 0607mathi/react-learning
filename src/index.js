@@ -1,7 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import { UserDetails } from './UserDetails';
+import { Regform1 } from './Regform1';
+// import { Regform } from './Regform';
+// import { UserDetails } from './UserDetails';
 // import { Cart } from './Cart';
 // import App from './App';
 
@@ -12,9 +14,10 @@ root.render(
     {/*
         <App />
         <Cart />
+        <UserDetails/>
+        <Regform />
      */}
-
-    <UserDetails/>
+     <Regform1/>
   </React.StrictMode>
 );
 

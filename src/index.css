@@ -1,4 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 body{
+    font-family:'poppins',sans-serif;
     background-color: black;
     color: whitesmoke;
 }
+
+table,th,td{
+    border:1px solid white;
+    border-collapse: collapse;
+}
+
+table{
+    width: 350px;
+}
+
+tbody>.heading{
+    background-color: green;
+
+}
+
+.heading{
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+th{
+    width: 100px;
+    text-align: left;
+    padding: 10px;
+}
+
+td{
+    padding: 10px;
+}
+
+/* 
+this tyle for Regform main file
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 350px;
+}
+
+input{
+    margin-left: 10px;
+}
+
+textarea{
+    border-radius: 5px;
+} */
+
+/* this style for Regform1 file */
+
+.conatiner{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+form{
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+label{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+
+label>div{
+    display: flex;
+}
+
+textarea{
+    border-radius: 5px;
+}
+
+
+@media (min-width: 320px) and (max-width: 376px) {
+    
+    /* css */
+        *{
+            font-size: small;
+        }
+        td,table,form{
+            width: 285px;
+        }
+  }
