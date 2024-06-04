@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.advirse-app{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.container{
+    padding: 5px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    border-radius: 6px;
+    background: linear-gradient(to top, black, gray);
+    box-shadow: 0px 0px 10px 1px white;
+    border: 1px solid white;
+}
+
+.content{
+    width: 315px;
+    padding: 10px 10px;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    justify-content:center ;
+    align-items: center;
+}
+
+p{
+    font-size: 14px;
+    margin-top: 10px;
+    color: rgba(203, 199, 199, 0.747);
+}
+
+button{
+    margin-top: 10px;
+    font-size: 14px;
+    padding: 5px 15px;
+    border-radius: 5px;
+    border: none;
+    font-weight: 800;
+    cursor: pointer;
+    background-color: rgb(203, 202, 202);
+}
+
+button:hover{
+    box-shadow: 0px 0px 1px 1px rgb(179, 178, 178);
+}
+
+.error{
+    padding: 10px 5px;
+    margin-bottom: 5px;
+}
+
+.error-h3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.error-img{
+    width: 20px;
+    height: 20px;
+    color: aliceblue;
+}
+
+@media (min-width: 320px) and (max-width: 376px) {
+    .container{
+        width: 200px;
+        flex-direction:column-reverse;
+    }
+
+    .content{
+        width:250px;
+        padding: 10px 10px;
+        border-radius: 6px;
+    }
+
+    button,.content>p{
+        font-size: 12px;
+    }
+
+}
+
+@media (min-width: 377px) and (max-width: 426px){
+    .container{
+        width: 290px;
+        flex-direction: column-reverse;
+    }
+
+    .images>img{
+        width: 290px;
+    }
+
+    .content{
+        width:360px;
+    }
+}
+
+@media (min-width: 427px) and (max-width:569px){
+    .container{
+        width: 290px;
+        flex-direction: column-reverse;
+    }
+
+    .images>img{
+        width: 290px;
+    }
+
+    .content{
+        width:360px;
+    }
+}
+
+@media (min-width: 570px) and (max-width:640px){
+    .container{
+        padding: 5px 5px;
+        width: 520px;
+        flex-direction:row;
+        gap: 5px;
+    }
+    
+    .images>img{
+        width: 250px;
+        height: 450px;
+
+    }
+    
+}
+
+@media (min-width: 641px) and (max-width:769px){
+   
+    .images>img{
+        width: 230px;
+        height: 500px;
+    }
+
+    .container{
+        padding: 10px 5px;
+    }
+    
+}
+

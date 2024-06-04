@@ -1,7 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import { Regform1 } from './Regform1';
+import { Advise } from './Adrvise_App/Advise';
+// import { Regform1 } from './Regform1';
 // import { Regform } from './Regform';
 // import { UserDetails } from './UserDetails';
 // import { Cart } from './Cart';
@@ -16,8 +17,9 @@ root.render(
         <Cart />
         <UserDetails/>
         <Regform />
+        <Regform1/>
      */}
-     <Regform1/>
+     <Advise/>
   </React.StrictMode>
 );
 
