@@ -1,0 +1,61 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+}
+
+.Counter{
+    border: 1px solid white; 
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px 20px;
+}
+
+.btns{
+    display: flex;
+    gap: 20px;
+}
+
+.opt{
+    width:100px;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+button{
+    padding: 10px;
+    font-weight: 500;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+}
+
+p{
+    width: 100px;
+}
+
+.counts{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.counts>div{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}

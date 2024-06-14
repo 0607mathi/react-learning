@@ -1,8 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import { Advise } from './Adrvise_App/Advise';
+import { TNPSC_Counter } from './TNPSC_Counter';
 // import { Regform1 } from './Regform1';
+// import { Advise } from './Adrvise_App/Advise';
 // import { Regform } from './Regform';
 // import { UserDetails } from './UserDetails';
 // import { Cart } from './Cart';
@@ -18,8 +19,9 @@ root.render(
         <UserDetails/>
         <Regform />
         <Regform1/>
+        <Advise/>
      */}
-     <Advise/>
+     <TNPSC_Counter/>
   </React.StrictMode>
 );
 
